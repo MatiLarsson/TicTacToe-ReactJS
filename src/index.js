@@ -182,8 +182,8 @@ class Game extends React.Component {
 
     return (
       <>
-        <div className='title'>Welcome to my version of <a href='https://reactjs.org/'>reactjs.org</a> tutorial</div>
-        <div className='subTitle'>Feel free to play around and use my code as you wish!<br/>I also invite you to check my other projects at <a href='https://github.com/MatiLarsson'>My GitHub Repo!</a></div>
+        <div className='title'>Welcome to my version of <a target='blank' href='https://reactjs.org/'>reactjs.org</a> tutorial</div>
+        <div className='subTitle'>Feel free to play around and use my code as you wish!<br/>I also invite you to check my other projects at <a target='blank' href='https://github.com/MatiLarsson'>My GitHub Repo!</a></div>
         <div className='title fun'>HAVE FUN !</div>
         <div className='status'>{status}</div>
         <div className="game">
