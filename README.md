@@ -17,7 +17,7 @@ https://iridescent-kangaroo-0789ef.netlify.app/
 
 ### Instructions for it's installation:
 
-1. git clone https://github.com/TicTacToe-ReactJS/
+1. git clone https://github.com/MatiLarsson/TicTacToe-ReactJS
 2. cd TicTacToe-ReactJS
 3. npm install
 4. npm start
