@@ -181,22 +181,28 @@ class Game extends React.Component {
     }
 
     return (
-      <div className="game">
-        <div className="game-board">
-          <Board
-            squares={current.squares}
-            onClick ={(i) => this.handleClick(i)}
-            winningLine={this.state.winningLine}
-          />
+      <>
+        <div className='title'>Welcome to my version of <a href='https://reactjs.org/'>reactjs.org</a> tutorial</div>
+        <div className='subTitle'>Feel free to play around and use my code as you wish!<br/>I also invite you to check my other projects at <a href='https://github.com/MatiLarsson'>My GitHub Repo!</a></div>
+        <div className='title fun'>HAVE FUN !</div>
+        <div className='status'>{status}</div>
+        <div className="game">
+          <div className="game-board">
+            <Board
+              squares={current.squares}
+              onClick ={(i) => this.handleClick(i)}
+              winningLine={this.state.winningLine}
+            />
+          </div>
+          <div className="game-info">
+            <button className='sort' onClick={() => this.handleSort()}>
+              {this.state.sortFlag ? 'Sort moves from latest to first 👆' : 'Sort moves from first to latest 👇'}
+            </button>
+            <ol>{sortedMoves}</ol>
+          </div>
         </div>
-        <div className="game-info">
-          <div>{status}</div>
-          <button onClick={() => this.handleSort()}>
-            {this.state.sortFlag ? 'Sort moves from latest to first' : 'Sort moves from first to latest'}
-          </button>
-          <ol>{sortedMoves}</ol>
-        </div>
-      </div>
+        <div className='credit'>by <a target='blank' href='https://www.linkedin.com/in/matias-larsson-881969144/'>Matias Larsson</a></div>
+      </>
     );
   }
 }
